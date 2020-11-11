@@ -1,0 +1,3 @@
+https://en.wikipedia.org/wiki/X86_calling_convention
+https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.mds
+https://cs.lmu.edu/~ray/notes/nasmtutorial/
