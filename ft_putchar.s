@@ -1,18 +1,17 @@
-section		.data
-section		.bss
-
-	global	ft_putchar
+	global	_ft_putchar
 section		.text
-ft_putchar:
-			push 	rdi
+_ft_putchar:
 			push 	rsi
-			push 	rdx
-			mov		rsi, rdx
+			mov		rsi, rdi
 			mov		rdi, 1
 			mov		rdx, 1
 			mov		rax, 1
+			push	rsi
+			mov		rsi, rsp
 			syscall
-			pop		rdi
 			pop		rsi
-			pop		rdx
+			pop		rsi
+			ret
 
+section		.data
+section		.bss
