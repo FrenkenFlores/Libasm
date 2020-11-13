@@ -5,7 +5,7 @@ _ft_putchar:
 			mov		rsi, rdi
 			mov		rdi, 1
 			mov		rdx, 1
-			mov		rax, 1
+			mov		rax, 4
 			push	rsi
 			mov		rsi, rsp
 			syscall
