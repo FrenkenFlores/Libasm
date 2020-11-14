@@ -1,4 +1,5 @@
 			global	_ft_putchar
+			
 			section		.data
 			section		.bss
 			section		.text

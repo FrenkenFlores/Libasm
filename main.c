@@ -11,6 +11,7 @@ ssize_t		ft_read(int fd, void *buf, size_t n);
 size_t		ft_strlen(const char *s);
 char		*ft_strcpy(char *dst, const char *src);
 int			ft_strcmp(const char *s1, const char *s2);
+char		*ft_strdup(const char *s1);
 
 int        main(int argc, char **argv)
 {
@@ -27,11 +28,13 @@ int        main(int argc, char **argv)
 //	int fd = open("./material.txt", O_RDONLY);
 //	a = read(fd, str, -1);
 //	tmp = ft_strcpy(ar1, ar2);
-	a = ft_strcmp(0x0, "abcdg");
+//	a = ft_strcmp(0x0, "abcdg");
 //	printf ("\n%i\n%s", a, str);
 //	printf("\n%s", ar1);
 //	printf("\n%s", tmp);
-	printf("\n%i", a);
+	tmp = ft_strdup("hello world");
+	printf("\n%s", tmp);
+//	printf("\n%i", a);
 	printf("\nerr = %i\n", errno);
 	return (0);
 }

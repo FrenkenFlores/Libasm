@@ -1,9 +1,11 @@
 			extern	___error
 			global	_ft_write
+			
 			section	.bss
 			section	.data
 			section	.text
-_ft_write:  mov		rax, 0x2000004
+_ft_write:  
+			mov		rax, 0x2000004
 			syscall
 			cmp		edi, 0
 			jl		.error
@@ -12,8 +14,8 @@ _ft_write:  mov		rax, 0x2000004
 			cmp		edx, 0
 			jl		.error		
 			ret
-
-.error:		push	rdx
+.error:		
+			push	rdx
 			mov		rdx, rax
 			call	___error
 			mov		[rax], rdx
