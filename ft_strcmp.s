@@ -11,18 +11,18 @@ _ft_strcmp:
 			inc		rcx
 			mov		al, byte [rdi+rcx]
 			mov		dl, byte [rsi+rcx]
-			cmp		al, 0
+			cmp		eax, 0
 			je		.end
-			cmp		dl, 0
+			cmp		edx, 0
 			je		.end
-			cmp		al, dl
+			cmp		eax, edx
 			je		.loop
 			sub		eax, edx
 			ret
 .end:		
-			cmp		al, dl
+			cmp		eax, edx
 			jl		.end_d
-			cmp		al, dl
+			cmp		eax, edx
 			jg		.end_s
 			mov		rax, 0
 			ret

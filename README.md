@@ -9,3 +9,4 @@ https://cs.lmu.edu/~ray/notes/nasmtutorial/
 https://opensource.apple.com/source/xnu/xnu-1504.3.12/bsd/kern/syscalls.master
 https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/x64-architecture
 https://www.tutorialspoint.com/assembly_programming/index.htm
+http://zeus.cs.pacificu.edu/shereen/OldCourses/cs430f08/Lectures/ch11bF08.pdf
